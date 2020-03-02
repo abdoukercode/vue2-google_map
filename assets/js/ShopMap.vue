@@ -3,7 +3,7 @@
     <gmap-map
             :center="center"
             :zoom="zoom"
-            style="width: 100%; height: 100%"
+            style="width: 1200px; height: 800px"
     >
 
             <gmap-marker
@@ -11,9 +11,8 @@
                     v-for="(m, index) in markers"
                     :position="m.position"
                     :clickable="true"
-                    icon="/star-red.png"
                     :draggable="true"
-                    @click="toggleInfoWindow(m,index)"
+                    @click="center=m.position"
             ></gmap-marker>
 
 <!--        <gmap-info-window :options="infoOptions" :position="infoWindowPos" :opened="infoWinOpen" @closeclick="infoWinOpen=false">-->
@@ -28,11 +27,11 @@
     export default {
         data () {
             return {
-                center: {lat: 10.0, lng: 10.0},
-                zoom:5,
+                center: {lat: 48.864716, lng: 2.349014},
+                zoom:11,
                 markers: [
-                    {position: {lat:10.0,lng:10.0}},
-                    {position: {lat:11.0,lng:11.0}},
+                    {position: {lat:48.864716,lng:2.349014}},
+                    {position: {lat:48.764716,lng:2.449014}},
                 ]
             }
         }
