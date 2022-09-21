@@ -23,6 +23,6 @@
         "vue-loader": "^15.9.0",
         "vue-template-compiler": "^2.6.11",
         "vue2-google-maps": "^0.10.7",
-        "vuetify": "^2.2.15"
+        "vuetify": "^2.6.10"
     }
 }
